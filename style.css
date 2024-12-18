@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f7f7f7;
+}
+
+.card {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  width: 50%;
+  /* height: 80%; */
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 30px;
+  margin-top: 500px;
+}
+.card .search {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+}
+.card .search input {
+  padding: 20px 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  width: 100%;
+  border-radius: 16px;
+  -webkit-border-radius: 16px;
+  -moz-border-radius: 16px;
+  -ms-border-radius: 16px;
+  -o-border-radius: 16px;
+}
+.card .search input::placeholder {
+  color: #ccc;
+  font-size: 20px;
+}
+.card .search button {
+  /*padding: 10px 20px;
+  */
+  background-color: #fff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.card .search button img {
+  width: 100%;
+}
+.card .weather {
+  display: none;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+.card .weather img {
+  width: 300px;
+}
+.card .weather h1 {
+  font-size: 80px;
+  font-weight: bold;
+  color: #333;
+}
+.card .weather .details{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  text-align: center;
+}
+.card .weather .details .details-box{
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.card .weather .details .details-box img{
+  width: 200px;
+}
+
+.card .weather .details .details-box .description{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.card .weather .details .details-box .description p{
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;  
+}
+.error{
+  color: red;
+  text-align: center;
+  margin-top: 20px;
+  display: none;
+}
